@@ -23,7 +23,7 @@ const Service2: React.FC = () => {
             <BasicComponent subHeading='Service' heading='Services We are Offering' />
             <div className='grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-8 md:mx-0'>
                 {serviceData.map((service, index) => (
-                    <div key={index} className='shadow-custom-light bg-white hover:bg-primary group rounded'>
+                    <div key={index} className='hover:scale-105 transition-all duration-500 shadow-custom-light bg-white hover:bg-primary group rounded'>
                         <div className=''>
                             <Image  src={service.image} alt='service' width={424} height={230} />
                         </div>
