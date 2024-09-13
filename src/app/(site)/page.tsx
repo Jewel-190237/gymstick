@@ -1,19 +1,11 @@
-// import Image from "next/image";
 
-// import ShopCard from "../components/card/ShopCard";
-import Shop from "../components/Shop/Shop";
-// import ExpertTeam from "../components/ExpertTeam";
-// import Feature from "../components/Feature";
-// import Service from "../components/Service";
-
+import Pricing from "../components/pricing/Pricing";
+// import Service2 from "../components/Service2";
 export default function Home() {
   return (
     <div>
-     {/* <Feature></Feature> */}
-     {/* <ExpertTeam></ExpertTeam> */}
-     {/* <Service/> */}
-     <Shop/>
-     {/* <ShopCard/> */}
+     {/* <Service2/> */}
+     <Pricing/>
     </div>
   );
 }
