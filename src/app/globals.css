@@ -14,7 +14,8 @@ body {
 .image-shape {
   clip-path: path("M0 4.00001C0 1.79087 1.79086 0 4 0H420C422.209 0 424 1.79086 424 4V464.731H196.116C183.015 464.731 171.011 457.415 165.008 445.77L147.549 411.909C134.616 386.826 98.8396 386.577 85.5584 411.477L67.0362 446.203C60.9532 457.607 49.08 464.731 36.1545 464.731H0V4.00001Z");
 }
-.status{
+
+.status {
   clip-path: path("M112.375 7.19375L6.77382 95.4356C5.95833 96.117 4.90517 96.4459 3.84681 96.3497L3.65703 96.3325C1.58871 96.1444 0.00835208 94.4048 0.0192255 92.3279L0.47926 4.46125C0.490747 2.26731 2.26732 0.492075 4.46127 0.482236L109.723 0.010209C111.135 0.00387966 112.445 0.741881 113.171 1.95219L113.24 2.06633C114.253 3.75535 113.886 5.93073 112.375 7.19375Z");
 }
 
@@ -94,5 +95,24 @@ body {
 }
 
 .button:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
+}
+
+.input-label {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.input-placeholder {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 10px;
 }
