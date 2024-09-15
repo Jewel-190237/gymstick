@@ -4,7 +4,7 @@ import Image from 'next/image';
 const GetInTouch: React.FC = () => {
 
     return (
-        <section className='flex flex-col lg:flex-row items-center bg-black justify-center max-w-[1520px] mx-auto'>
+        <section className='flex flex-col lg:flex-row items-center bg-black justify-center max-w-[1920px] mx-auto'>
             <div className="flex-1 ">
                 <Image src='/images/GetInTouch.png' alt='Get In Touch' width={948} height={1010} />
             </div>
@@ -32,7 +32,7 @@ const GetInTouch: React.FC = () => {
                     </div>
                     <div className='mt-6'>
                         <label className="input-label ont-montserrat">Message</label>
-                        <input placeholder='Write Your Message' type="text" id="lName" name="lName" className="h-[150px] block w-full px-3 py-2 bg-black input-placeholder border rounded" required />
+                        <textarea placeholder='Write Your Message' id="lName" name="lName" className="h-[150px] w-full px-4 py-5 bg-black input-placeholder border rounded" required></textarea>
                     </div>
                     <button type="submit" className="button mt-12"> Submit </button>
                 </form>

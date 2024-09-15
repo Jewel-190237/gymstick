@@ -1,11 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-
 interface BasicComponentProps {
     subHeading: string;
     heading: string;
 }
-
 const BasicComponent: React.FC<BasicComponentProps> = ({ subHeading, heading }) => {
     return (
         <div className='space-y-6 mb-[70px] '>

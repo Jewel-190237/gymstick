@@ -1,7 +1,7 @@
 // import Pricing from "../components/pricing/Pricing";
 // import Service2 from "../components/Service2";
 import Shop from "../components/singlePage/Shop";
-import GetInTouch from "../components/GetInTouch";
+// import GetInTouch from "../components/GetInTouch";
 // import Shop from "../components/Shop/Shop";
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       {/* <Shop/> */}
      {/* <Service2/> */}
      {/* <Pricing/> */}
-     <GetInTouch/>
+     {/* <GetInTouch/> */}
      <Shop/>
     </div>
   );
