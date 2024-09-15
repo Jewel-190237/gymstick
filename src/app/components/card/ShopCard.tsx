@@ -12,15 +12,16 @@ interface ShopCardProps {
     image: string;
   }
 const ShopCard: React.FC<ShopCardProps> = ({status, rate, name, price, image}) => {
-    return (
-        <div className="rounded hover:scale-105 transition-all duration-150">
-            <div className='relative status bg-primary w-[115px] h-[96px] flex items-center'> <p className='text-white pl-4 -rotate-45'>{status}</p> </div>
-            <div className='bg-[#D9D9D9] -mt-24'>
-                <Image src={image} alt="shop" width={270} height={294} className="mx-auto" />
+    return ( 
+        <div className="rounded hover:scale-105 transition-all duration-150 max-w-[310px] mx-auto border">
+            <div className='relative  mx-auto h-294 max-w-[310px] border '>
+                <Image src={image} alt="shop" width={310} height={294} className="" />
+                <div className='absolute top-0 status bg-primary w-[115px] h-[115px]'> 
+                    <p  className='text-white -ml-2 -rotate-45'>{status}</p> </div>
             </div>
-            <div className="shadow-custom-light text-center flex flex-col gap-2 py-6">
+            <div className="text-center flex flex-col gap-2 py-6">
                 <h6 className="capitalize text-[16px] font">{name}</h6>
-                <Rate defaultValue={rate} />
+                <Rate className='text-primary' defaultValue={rate} />
                 <h6 className="text-[16px] font-semibold">${price}</h6>
                 <div className="flex gap-[14px] justify-center">
                     <button className="p-1 hover:bg-primary hover:text-white text-primary bg-white border border-primary rounded cursor-pointer">
