@@ -16,7 +16,7 @@ body {
 }
 
 .status {
-  clip-path: path("M112.375 7.19375L6.77382 95.4356C5.95833 96.117 4.90517 96.4459 3.84681 96.3497L3.65703 96.3325C1.58871 96.1444 0.00835208 94.4048 0.0192255 92.3279L0.47926 4.46125C0.490747 2.26731 2.26732 0.492075 4.46127 0.482236L109.723 0.010209C111.135 0.00387966 112.445 0.741881 113.171 1.95219L113.24 2.06633C114.253 3.75535 113.886 5.93073 112.375 7.19375Z");
+  clip-path: path("M112.947 8.00336L6.85383 113.652C5.99761 114.504 4.79645 114.924 3.59513 114.794C1.55795 114.573 0.00683969 112.847 0.0158421 110.798L0.482597 4.55706C0.492236 2.36313 2.26727 0.586411 4.46118 0.574686L109.521 0.0132488C111.04 0.00513254 112.432 0.857852 113.115 2.2144L113.697 3.37021C114.474 4.91444 114.172 6.7834 112.947 8.00336Z");
 }
 
 .heading {
@@ -93,7 +93,8 @@ body {
   color: white;
   padding: 1rem 2rem;
 }
-.product-button{
+
+.product-button {
   border-radius: 0.25rem;
   background-color: white;
   font-size: 16px;
@@ -103,7 +104,8 @@ body {
   padding: 1rem 2rem;
   border: 0.5px solid #D9D9D9;
 }
-.product-button:hover{
+
+.product-button:hover {
   background-color: #E67529;
   transform: scale(1.05);
   color: white;
@@ -113,16 +115,20 @@ body {
 .button:hover {
   transform: scale(1.05);
 }
-.share-button{
+
+.share-button {
   color: #2B2B2B;
   height: 40px;
   width: 40px;
   transition: transform 0.3s;
   border-radius: 100%;
   padding-left: 0.5rem;
-  padding-right: 0.5rem
+  padding-right: 0.5rem;
+  fill: #FFF;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.10));
 }
-.share-button:hover{
+
+.share-button:hover {
   transform: scale(1.05);
   color: white;
   background-color: #E67529;
@@ -158,6 +164,7 @@ body {
 .ant-pagination .ant-pagination-item {
   border: 1px solid #D9D9D9;
 }
+
 .ant-pagination .ant-pagination-item-active {
   background-color: #E67529;
   color: #FFFFFF;
@@ -171,9 +178,20 @@ body {
 .ant-pagination .ant-pagination-item-active a:hover {
   color: #FFFFFF;
 }
-.text1{
+
+.text1 {
   color: #2B2B2B;
 }
+
 .text-secondary {
   color: #534C4C;
+}
+
+.shop-style {
+  color: #2B2B2BCC;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  text-align: justify;
 }
