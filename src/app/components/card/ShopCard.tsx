@@ -17,7 +17,7 @@ const ShopCard: React.FC<ShopCardProps> = ({status, rate, name, price, image}) =
             <div className='relative  mx-auto h-294 max-w-[310px] border '>
                 <Image src={image} alt="shop" width={310} height={294} className="" />
                 <div className='absolute top-0 status bg-primary w-[115px] h-[115px]'> 
-                    <p  className='text-white -ml-2 -rotate-45'>{status}</p> </div>
+                    <p  className='text-white flex mt-2 items-center -rotate-45'>{status}</p> </div>
             </div>
             <div className="text-center flex flex-col gap-2 py-6">
                 <h6 className="capitalize text-[16px] font">{name}</h6>
