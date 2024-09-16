@@ -1,5 +1,4 @@
-
-'use client'
+'use client';
 import React, { useState } from 'react';
 import BasicHeader from '../shared/BasicHeader';
 import Image from 'next/image';
@@ -11,6 +10,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import Review from '../Review';
 import ShopCard from '../card/ShopCard';
 import { BsHandbag } from "react-icons/bs";
+import Link from 'next/link';
 const products = [{ status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' },]
 
 const Wheyprotein: React.FC = () => {
@@ -112,7 +112,7 @@ const Wheyprotein: React.FC = () => {
                 <div className="flex items-center justify-center flex-col w-full">
                     <p className="text-primary text-3xl mb-4">✔</p>
                     <p>impact whey protein has been added to your cart.</p>
-                    <button className='product-button mt-3'>View Cart</button>
+                    <Link href='/cart'><button className='product-button mt-3'>View Cart</button></Link>
                 </div>
             </Modal>
         </section>
