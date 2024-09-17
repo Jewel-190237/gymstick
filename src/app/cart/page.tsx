@@ -1,13 +1,14 @@
 import React from 'react';
 import BasicHeader from '../components/shared/BasicHeader';
 import ProductCard from '../components/card/ProductCard';
-const products = [{ image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1, quantity: 3 }, { image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1, quantity: 3 }];
+import Link from 'next/link';
+const products = [{ image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1 }, { image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1 }];
 const Page: React.FC = () => {
     return (
         <section>
             <BasicHeader heading='shopping cart' subHeading='Home' />
             <div className='max-w-[1320px] mx-auto'>
-                <p className='shop-heading font-montserrat'>shopping cart</p>
+                <p className='shop-heading mt-[140px] font-montserrat'>shopping cart</p>
                 <div className='flex flex-col md:flex-row space-x-0 md:space-x-[90px] lg:space-x-[136px] mt-14'>
                     <div className='w-2/3'>
                         {
@@ -18,7 +19,7 @@ const Page: React.FC = () => {
                                     name={product.name}
                                     price={product.price}
                                     size={product.size}
-                                    quantity={product.quantity}
+                                    
                                 />
                             ))
                         }
@@ -39,20 +40,20 @@ const Page: React.FC = () => {
                             <div className='mt-14 text-[18px] font-light text-[#534C4C]'>
                                 <div className='flex justify-between pb-[18px] border-[#D9D9D9] border-b'>
                                     <p>SubTotal</p>
-                                    <p>&161.78</p>
+                                    <p>$161.78</p>
                                 </div>
                                 <div className='flex justify-between py-[18px] border-[#D9D9D9] border-b'>
                                     <p>Tax</p>
-                                    <p>&10.00</p>
+                                    <p>$10.00</p>
                                 </div>
                                 <div className='flex justify-between py-[18px] border-[#D9D9D9] border-b'>
                                     <p className='font-semibold text1'>Total</p>
-                                    <p>&171.78</p>
+                                    <p>$171.78</p>
                                 </div>
                                 <p className='mt-4'>shopping cost calculate at checkout *</p>
                             </div>
                         </div>
-                        <button className='process-button'> Proceed to checkout</button>
+                       <Link href='/checkout'> <button className='process-button'> Proceed to checkout</button></Link>
                     </div>
                 </div>
             </div>

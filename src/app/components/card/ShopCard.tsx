@@ -14,7 +14,7 @@ interface ShopCardProps {
 const ShopCard: React.FC<ShopCardProps> = ({status, rate, name, price, image}) => {
     return ( 
         <div className="rounded hover:scale-105 transition-all duration-150 max-w-[310px] mx-auto border">
-            <div className='relative  mx-auto h-294 max-w-[310px] border '>
+            <div className='relative mx-auto h-294 max-w-[310px] border '>
                 <Image src={image} alt="shop" width={310} height={294} className="" />
                 <div className='absolute top-0 status bg-primary w-[115px] h-[115px]'> 
                     <p  className='text-white flex mt-2 items-center -rotate-45'>{status}</p> </div>
