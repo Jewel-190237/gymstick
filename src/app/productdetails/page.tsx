@@ -1,15 +1,15 @@
 'use client';
 import React, { useState } from 'react';
-import BasicHeader from '../shared/BasicHeader';
 import Image from 'next/image';
 import { Rate, Pagination, Modal } from 'antd';
 import { BsCartPlus, BsHandbag } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { TbBrandYoutube } from "react-icons/tb";
-import Review from '../Review';
-import ShopCard from '../card/ShopCard';
 import Link from 'next/link';
 import { FaXTwitter } from 'react-icons/fa6';
+import BasicHeader from '../components/shared/BasicHeader';
+import Review from '../components/Review';
+import ShopCard from '../components/card/ShopCard';
 
 const products = [{ status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' },]
 
@@ -100,7 +100,7 @@ const Wheyprotein: React.FC = () => {
                     </div>
                     <div className="mt-10">
                         {activeTab === 'description' && <p className='shop-style border border-[#D9D9D9] py-10 px-7 rounded'>
-                            Description It is a long established fact that a reader will be distracted by the readable content of the page when looking at its layout. The point of using Lorem Ipsum is that it has a normal distribution of letters, as opposed to using content here.
+                            Description It is a long established to fact that is one reader will be the distracted by the readable content of the page when this looking at its layout. The point of using Lorem Ipsum is that it is has normal distribution of letters, as opposed to using contents here. Lorem is an long established to fact that is one reader will be the distracted by the readable content.Description It is a long established to fact that is one reader will be the distracted by the readable content of the page when this looking at its layout. The point of using Lorem Ipsum is that it is has normal distribution of letters, as opposed to using contents here. Lorem is an long established to fact that is one reader will be the distracted by the readable content.
                         </p>}
                         {activeTab === 'review' && <Review />}
                     </div>
@@ -112,6 +112,7 @@ const Wheyprotein: React.FC = () => {
                             ))}
                         </div>
                         <Pagination
+                        align='center'
                             current={currentPage}
                             pageSize={pageSize}
                             total={totalProduct}
