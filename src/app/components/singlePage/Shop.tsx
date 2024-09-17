@@ -48,7 +48,7 @@ const Shop: React.FC = () => {
                         <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['hover']} overlayClassName='category-dropdown' >
                             <Space className='ml-10 text-[16px] gap-4 cursor-pointer'>
                                 <span className="capitalize">{selectedCategory}</span>
-                                <DownOutlined className='text-xl' />
+                                <DownOutlined />
                             </Space>
                         </Dropdown>
                     </div>

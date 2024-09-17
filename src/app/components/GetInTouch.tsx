@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 const GetInTouch: React.FC = () => {
-
     return (
         <section className='flex flex-col lg:flex-row items-center bg-black justify-center max-w-[1920px] mx-auto'>
             <div className="flex-1 ">
@@ -40,5 +39,4 @@ const GetInTouch: React.FC = () => {
         </section>
     );
 };
-
 export default GetInTouch;
