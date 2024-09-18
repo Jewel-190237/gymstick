@@ -17,7 +17,6 @@ const items: MenuProps['items'] = [
 ];
 
 const products = [{ status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Dumbbel', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'Dumbbel', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Shoe', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Dumbbel', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'Shoe', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Dumbbel', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'whey protine', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Dumbbel', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'Bags', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Bags', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Bags', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'Bags', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sold Out', rate: 4, name: 'Shoe', price: 30.67, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' }, { status: 'Sale Now', rate: 4, name: 'whey protine', price: 80.89, image: '/images/ShopCard/shopCardImage.png' },];
-
 const Shop: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState('');
@@ -45,27 +44,23 @@ const Shop: React.FC = () => {
         <section className='my-10'>
             <BasicHeader heading='Shop' subHeading='Home' />
             <div className='max-w-[1320px] mx-auto mt-[140px] mb-14'>
-                <div className='flex flex-col md:flex-row border rounded'>
-                    <div className='w-full md:w-[25%] flex gap-6 py-[22px] text-white items-center bg-primary'>
+                <div className='flex flex-col md:flex-row border-0 md:border rounded px-0 md:mx-8 lg:mx-0'>
+                    <div className='w-[80%] mx-auto md:w-[33%] lg:w-[25%] flex md:space-x-3 lg:space-x-6 py-[22px] text-white items-center bg-primary'>
                         <RiMenu2Fill className='ml-6' />
-                        <p className='capitalize md:text-[10px] lg:text-[16px] font-medium'>browse all categories</p>
+                        <p className='capitalize text-[16px] font-medium'>browse all categories</p>
                     </div>
-                    <div className='w-full md:w-[58%] col-span-2 border-none'>
+                    <div className='mt-3 md:mt-0 w-[80%] mx-auto md:w-[34%] lg:w-[58%] border md:border-0'>
                         <Input
                             className='py-[22px] text-[20px] border-none'
-                            placeholder="search all brand and product"
-                            prefix={<SearchOutlined className='ml-12 mr-4 text-2xl' />}
+                            placeholder="search all product"
+                            prefix={<SearchOutlined className='ml-2 md:ml-5 lg:ml-12 text-2xl' />}
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
-                    <div className='flex items-center w-full md:w-[17%] h-[75px] border'>
-                        <Dropdown
-                            menu={{ items, onClick: handleMenuClick }}
-                            trigger={['hover']}
-                            overlayClassName='category-dropdown'
-                        >
-                            <Space className='ml-10 text-[16px] gap-4 cursor-pointer'>
+                    <div className='mt-3 md:mt-0 w-[80%] mx-auto flex items-center md:w-[33%] lg:w-[17%] h-[75px] border md:border-t-0 md:border-b-0 border-y'>
+                        <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['hover']} overlayClassName='category-dropdown'>
+                            <Space className='ml-5 md:ml-10 text-[16px] space-x-4 cursor-pointer'>
                                 <span className="capitalize">{selectedCategory}</span>
                                 <DownOutlined />
                             </Space>

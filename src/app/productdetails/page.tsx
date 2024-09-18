@@ -30,7 +30,7 @@ const Wheyprotein: React.FC = () => {
     };
 
     return (
-        <section>
+        <section className='px-8 lg:px-0'>
             <BasicHeader heading='Whey Protein' subHeading='Home' />
             <div className='max-w-[1320px] mx-auto mt-[140px] text1'>
                 <div className='flex flex-col md:flex-row gap-6'>
@@ -38,9 +38,9 @@ const Wheyprotein: React.FC = () => {
                         <Image src='/images/ShopCard/shopCardImage.png' alt="shop" width={648} height={640} />
                     </div>
                     <div className='flex-1'>
-                        <div className='flex items-center justify-between'>
+                        <div className='flex flex-col lg:flex-row lg:items-center justify-between'>
                             <p className='font-normal text-[18px]'>Protein Provider</p>
-                            <div className='flex items-center gap-5'>
+                            <div className='flex items-center space-x-5  md:mt-4 lg:mt-0'>
                                 <Rate className='text-primary' defaultValue={5} />
                                 <p className='text-[16px] font-normal'>Review(3)</p>
                             </div>
@@ -54,40 +54,40 @@ const Wheyprotein: React.FC = () => {
                         <p className='mt-[40px] text-[18px] font-normal'>Description</p>
                         <p className='mt-6 shop-style'>Impact Whey Protein is a high-quality, fast-absorbing protein powder that supports muscle growth and recovery. Packed with essential amino acids, it is perfect for post-workout nutrition or boosting daily protein intake. Ideal for athletes and fitness enthusiasts looking to build strength and improve performance.</p>
                         <p className='mt-10 text-[18px] font-medium'>Size: {weight} KG</p>
-                        <div className='mt-4 flex items-center space-x-6'>
+                        <div className='mt-4 flex items-center space-x-2 md:space-x-6'>
                             {['1.5', '2.5', '5'].map(size => (
                                 <button
                                     key={size}
                                     onClick={() => handleWeightChange(size)}
-                                    className={`product-button ${activeButton === size ? '!bg-primary !text-white' : ''}`}
+                                    className={`product-button text-[12px] md:text-[16px] px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 ${activeButton === size ? '!bg-primary !text-white' : ''}`}
                                 >
                                     {size} KG
                                 </button>
                             ))}
                         </div>
-                        <div className='mt-10 flex items-center space-x-6'>
-                            <Link href='/checkout'><button className='product-button flex items-center space-x-[10px]'>
+                        <div className='mt-10 flex flex-col lg:flex-row items-center lg:space-x-6'>
+                            <Link className='w-full' href='/checkout'><button className='w-full product-button  py-4 flex justify-center items-center space-x-[10px]'>
                                 <span>Buy Now</span> <BsHandbag />
                             </button></Link>
-                            <button className='product-button flex items-center space-x-[10px]' onClick={() => setIsModalVisible(true)}>
+                            <button className='w-full mt-6 lg:mt-0 product-button py-4 flex items-center justify-center space-x-[10px]' onClick={() => setIsModalVisible(true)}>
                                 <span>Add to Cart</span> <BsCartPlus size={20} />
                             </button>
                         </div>
                         <p className='mt-6 text-secondary text-[16px] font-normal capitalize'>
                             Is it sold out? <span className='text-primary underline'>Join the waiting list.</span>
                         </p>
-                        <div className='mt-12 flex items-center space-x-5'>
+                        <div className='mt-12 flex items-center space-x-3 md:space-x-5'>
                             <p className='text-[18px] font-medium'>Share:</p>
                             {[TbBrandYoutube, FaFacebookF, FaXTwitter, FaLinkedinIn].map((Icon, idx) => (
                                 <button key={idx} className='share-button shadow-custom-light'>
-                                    <Icon size={24} />
+                                    <Icon className='text-xl md:text-2xl' />
                                 </button>
                             ))}
                         </div>
                     </div>
                 </div>
                 <div className='mt-[140px]'>
-                    <div className="flex space-x-[35px]">
+                    <div className="flex space-x-3 md:space-x-[35px]">
                         {tabs.map(tab => (
                             <button
                                 key={tab}
@@ -132,7 +132,7 @@ const Wheyprotein: React.FC = () => {
                 <div className="flex items-center justify-center flex-col w-full">
                     <p className="text-primary text-3xl mb-4">✔</p>
                     <p>Impact Whey Protein has been added to your cart.</p>
-                    <Link href='/cart'><button className='product-button mt-3'>View Cart</button></Link>
+                    <Link href='/cart'><button className='product-button px-8 py-4 mt-3'>View Cart</button></Link>
                 </div>
             </Modal>
         </section>
