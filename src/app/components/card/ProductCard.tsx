@@ -26,12 +26,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, name, price, size }) =
         setSelectedCategory(e.key);
     };
     return (
-        <div className='flex space-x-6 pt-10 border-t border-[#D9D9D9] mb-10'>
+        <div className='flex flex-col md:flex-row space-x-0 md:space-x-6 pt-10 border-t border-[#D9D9D9] mb-10'>
             <div><Image className='rounded' src={image} alt="shop" width={200} height={200} /></div>
             <div className='flex-1'>
-                <div className='product-description flex justify-between items-center text-[18px] text-1 font-semibold'>
-                    <p>{name}</p>
-                    <p>${price.toFixed(2)}</p>
+                <div className='product-description flex flex-col md:flex-row md:justify-between md:items-center text-[18px] text-1 font-semibold'>
+                    <p className='mt-4 md:mt-0'>{name}</p>
+                    <p className='mt-2 md:mt-0'>${price.toFixed(2)}</p>
                 </div>
                 <div className='product-description mt-6 space-y-[10px]'>
                     <p>Size: {size} KG</p>

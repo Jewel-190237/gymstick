@@ -5,11 +5,11 @@ import CheckOutCard from '../components/card/CheckOutCard';
 const products = [{ image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1, quantity: 3 }, { image: '/images/ShopCard/shopCardImage.png', name: 'impact whey protein', price: 80.89, size: 1, quantity: 3 }];
 const page: React.FC = () => {
     return (
-        <section>
+        <section className='px-8 md:px-0'>
             <BasicHeader heading='check out' subHeading='home' />
             <div className='max-w-[1320px] mx-auto'>
                 <div className='flex flex-col md:flex-row space-x-0 md:space-x-[90px] lg:space-x-[136px] mt-[140px]'>
-                    <div className='w-2/3'>
+                    <div className='w-full md:w-2/3'>
                         <p className='shop-heading font-montserrat'>shopping cart</p>
                         <div className='mt-16 '>
                             <form className='space-y-6 '>
@@ -59,7 +59,7 @@ const page: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/3 '>
+                    <div className='w-full md:w-1/3 '>
                         <div className=''>
                             <p className='text-1 font-bold text-[28px]'>Order Summary</p>
                             <div className='mt-16'>
