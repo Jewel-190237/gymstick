@@ -53,7 +53,7 @@ const Shop: React.FC = () => {
                         <Input
                             className='py-[22px] text-[20px] border-none'
                             placeholder="search all product"
-                            prefix={<SearchOutlined className='ml-2 md:ml-5 lg:ml-12 text-2xl' />}
+                            prefix={<SearchOutlined className='ml-2 mr-4 md:ml-5 lg:ml-12 text-2xl' />}
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />

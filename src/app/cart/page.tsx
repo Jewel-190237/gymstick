@@ -25,12 +25,12 @@ const Page: React.FC = () => {
                         }
                         <div className='border-[#D9D9D9] border-t pt-10'>
                             <p className='font-medium text-[16px] text1'>Apply Coupon</p>
-                            <div className='flex flex-col w-full lg:flex-row items-center space-x-0 lg:space-x-3 justify-between mt-6'>
+                            <div className='flex flex-col w-full md:flex-row items-center space-x-0 lg:space-x-3 md:justify-between mt-6'>
                                 <div className='flex w-full flex-col md:flex-row items-center space-x-0 md:space-x-6'>
                                     <input className='px-5 py-4 w-full md:w-[50%] lg:w-[40%] border rounded' placeholder='enter your coupon code *' type="text" />
-                                    <button className='mt-3 md:mt-0 card-button w-full md:w-[30%] lg:w-[20%]'>Apply</button>
+                                    <button className='mt-3 md:mt-0 card-button w-full md:w-[35%] lg:w-[20%]'>Apply</button>
                                 </div>
-                                <button className='mt-3 md:mt-0 card-button w-full md:w-[25%]'>Update</button>
+                                <button className='mt-3 md:mt-0 card-button w-full md:w-[25%] lg:w-[20%]'>Update</button>
                             </div>
                         </div>
                     </div>

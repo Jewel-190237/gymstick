@@ -37,9 +37,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, name, price, size }) =
                     <p>Size: {size} KG</p>
                     <p>Quantity: {selectedCategory} pcs</p>
                 </div>
-                <div className='flex justify-between mt-12'>
-                    <Dropdown className='border rounded px-6' menu={{ items, onClick: handleMenuClick }}overlayClassName='category-dropdown'>
-                        <Space className='text-[16px] space-x-4 cursor-pointer'>
+                <div className='flex items-center justify-between mt-11'>
+                    <Dropdown className='border rounded px-6 md:px-4 lg:px-6' menu={{ items, onClick: handleMenuClick }} overlayClassName='category-dropdown'>
+                        <Space className='text-[16px]  py-4 space-x-3 md:space-x-2 lg:space-x-4 cursor-pointer'>
                             <span className="font-medium"> {selectedCategory} </span>
                             <DownOutlined />
                         </Space>
