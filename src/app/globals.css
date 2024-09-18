@@ -250,3 +250,7 @@ body {
   background-color: #E67529;
   border: none;
 }
+:where(.css-dev-only-do-not-override-qnu6hi).ant-input-outlined:hover {
+  border-color: #534C4C;
+  box-shadow: none;
+ }
