@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gymstick - Fitness Platform
+
+A modern, responsive fitness platform built with Next.js, Ant Design, Tailwind CSS, and TypeScript. Features include workout tracking, fitness plans, and gym management.
+
+## Features
+
+- Server-side rendering with Next.js
+- Responsive design for all devices
+- TypeScript for type safety
+- Ant Design components
+- Workout tracking system
+- Fitness plan management
+- Modern fitness-focused UI
+- Fast loading and performance
+
+## Technologies Used
+
+- **Framework:** Next.js 14
+- **UI Library:** Ant Design
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **Icons:** React Icons
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Jewel-190237/gymstick.git
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Open the project folder:
+   ```bash
+   cd gymstick
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:3000`
+
+## Project Structure
+
+```
+gymstick/
+├── app/
+│   ├── page.tsx
+│   ├── layout.tsx
+│   └── globals.css
+├── public/
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── postcss.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
+**Jewel-190237**
+- GitHub: [Jewel-190237](https://github.com/Jewel-190237)
+- Email: jewel190237@gmail.com
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to fork this project and create pull requests for any improvements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
